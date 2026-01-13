@@ -11,6 +11,11 @@ class Borrow extends Model
 
     public $timestamps = false;
 
+    public const STATUSES = [
+    'Borrowed' => 'Borrowed',
+    'Returned' => 'Returned',
+    ];
+    
     protected $fillable = [
         'borrowed_at',
         'duration',

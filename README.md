@@ -10,16 +10,11 @@ Project ini dikembangkan untuk memenuhi **tugas Ujian Akhir Semester (UAS)** den
 
 ## 👤 Identitas Mahasiswa
 
-- **Nama** : _Riski Bagas Pratama_
-- **NIM** : _2402510085_
+- **Nama** : _Riski Bagas Pratama_/_Ulul Azmi_
+- **NIM** : _2402510085_/_2402510083_
 - **Mata Kuliah** : _Web Based Programming_
 - **Program Studi** : _Sistem Informasi C'24_
 
-
-- **Nama** : _Ulul Azmi_
-- **NIM** : _2402510083_
-- **Mata Kuliah** : _Web Based Programming_
-- **Program Studi** : _Sistem Informasi C'24_
 ---
 
 ## ✨ Fitur Aplikasi
@@ -58,6 +53,28 @@ Fitur ini dibuat sebagai bentuk **validasi logika peminjaman** sesuai dengan ket
 ## 📌 Catatan
 
 Aplikasi ini dibuat untuk **keperluan akademik** dan telah disesuaikan dengan **soal UAS**, khususnya untuk mahasiswa dengan **NIM ganjil**.
+
+---
+
+## 👥 Akun Dummy (Untuk Pengujian)
+
+Gunakan akun berikut untuk mencoba fitur aplikasi tanpa harus membuat akun baru.
+
+### 🔑 Admin
+- **Nomor** : 6969
+- **Password** : password
+
+### 📚 Pustakawan
+- **Nomor** : 9999
+- **Password** : password
+
+### 👤 User
+- **Nomor** : 9696
+- **Password** : password
+
+> Akun dummy tersedia jika database dijalankan menggunakan **seeder**.
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -113,7 +130,7 @@ php artisan storage:link
 php artisan migrate
 
 # Dengan seeder (data dummy)
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 ```
 - Jalankan aplikasi.
 ```bash

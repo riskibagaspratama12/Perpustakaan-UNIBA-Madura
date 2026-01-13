@@ -1,9 +1,4 @@
 <x-app-layout>
-    @if (session('error'))
-    <div class="alert alert-danger mt-3 text-center fw-semibold">
-        {{ session('error') }}
-    </div>
-    @endif
     <section class="container min-vh-100 py-5">
         <div class="row row-cols-1 row-cols-lg-2 g-5 align-items-start"
             style="padding-top: 6rem; padding-bottom: 3rem">
@@ -103,6 +98,11 @@
                                 @enderror
                             </div>
                         </div>
+                        @if (session('error'))
+                        <div class="alert alert-danger mt-3 text-center fw-semibold">
+                            {{ session('error') }}
+                        </div>
+                        @endif
 
                         <button type="submit"
                             class="btn btn-success btn-lg rounded-pill px-5 shadow-sm d-block mx-auto">

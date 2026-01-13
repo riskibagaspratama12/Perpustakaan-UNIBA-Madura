@@ -40,15 +40,12 @@
                                 <td>{{ $book->publish_year }}</td>
                                 <td>{{ $book->amount }} buku</td>
                                 <td>
-                                    @switch($book->status)
-                                        @case(\App\Models\Book::STATUSES['Available'])
-                                            <span class="badge badge-success">Tersedia</span>
-                                        @break
-
-                                        @case(\App\Models\Book::STATUSES['Borrowed'])
-                                            <span class="badge badge-warning">Dipinjam</span>
-                                        @break
-                                    @endswitch
+                                    @if ($book->status === 'Available')
+                                        <span class="badge badge-success">Tersedia</span>
+                                    @elseif ($book->status === 'Borrowed')
+                                        <span class="badge badge-warning">Dipinjam</span>
+                                    @endif
+                                    
                                 </td>
                                 <td>
                                     <a href="{{ route('admin.books.edit', $book) }}"
