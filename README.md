@@ -10,8 +10,8 @@ Project ini dikembangkan untuk memenuhi **tugas Ujian Akhir Semester (UAS)** den
 
 ## 👤 Identitas Mahasiswa
 
-- **Nama** : _Riski Bagas Pratama_/_Ulul Azmi_
-- **NIM** : _2402510085_/_2402510083_
+- **Nama** : _Riski Bagas Pratama_ / _Ulul Azmi_
+- **NIM** : _2402510085_ / _2402510083_
 - **Mata Kuliah** : _Web Based Programming_
 - **Program Studi** : _Sistem Informasi C'24_
 
@@ -98,7 +98,8 @@ Gunakan akun berikut untuk mencoba fitur aplikasi tanpa harus membuat akun baru.
 
 ### Clone project
 ```bash
-git clone 
+git clone https://github.com/riskibagaspratama12/Perpustakaan-UNIBA-Madura.git
+
 ```
 
 - Setup database pada komputer anda, lalu masukkan kredensial-kredensialnya ke file `.env`.
