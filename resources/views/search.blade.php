@@ -4,7 +4,7 @@
         class="d-flex flex-column justify-content-center align-items-center text-center mt-5 py-5 px-4 bg-success-subtle rounded-4 mx-3">
         <h1 class="fw-bold mb-2">Hasil Pencarian</h1>
         <p class="text-muted mb-4">
-            Temukan buku favoritmu 📖
+            Temukan buku favoritmu 
         </p>
 
         <form action="{{ route('search') }}" method="GET"
@@ -17,12 +17,7 @@
 
             <button type="submit"
                 class="btn position-absolute top-50 end-0 translate-middle-y me-2">
-                <svg class="text-success" width="20" height="20" fill="currentColor"
-                    viewBox="0 0 18 18">
-                    <path
-                        d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 19.585938 21.585938 C 20.137937 22.137937 21.033938 22.137938 21.585938 21.585938 C 22.137938 21.033938 22.137938 20.137938 21.585938 19.585938 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z">
-                    </path>
-                </svg>
+                <p class="mb-0">Cari</p>
             </button>
         </form>
     </section>

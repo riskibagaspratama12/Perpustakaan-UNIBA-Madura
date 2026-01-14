@@ -99,11 +99,12 @@
                         class="col text-dark text-decoration-none">
                         <div
                             class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden">
-                            <img src="{{ !empty($newestBook->cover)
-                                    ? asset('storage/' . $newestBook->cover)
-                                    : asset('storage/placeholder.png') }}"
-                                 alt="{{ $newestBook->title }}"
-                                 class="card-img-top">
+                            @if($newestBook)
+                                <img src="{{ $newestBook->cover_url }}"
+                                    alt="{{ $newestBook->title }}"
+                                    class="w-24 h-32 object-cover">
+                            @endif
+                            
 
                             <div class="card-body text-center">
                                 <h3 class="fs-5 fw-bold mb-3">

@@ -19,7 +19,7 @@ class BookSeeder extends Seeder
                 'publish_year' => 1943,
                 'amount' => 5,
                 'status' => 'Available',
-                'cover' => 'covers/madilog.jpg',
+                'cover' => 'images/books/madilog.jpg',
             ],
             [
                 'title' => 'Sejarah Dunia yang Disembunyikan',
@@ -30,7 +30,7 @@ class BookSeeder extends Seeder
                 'publish_year' => 2007,
                 'amount' => 9,
                 'status' => 'Available',
-                'cover' => 'covers/SejarahDunia.jpg',
+                'cover' => 'images/books/SejarahDunia.jpg',
             ],
             [
                 'title' => 'Bumi',
@@ -41,7 +41,7 @@ class BookSeeder extends Seeder
                 'publish_year' => 2013,
                 'amount' => 6,
                 'status' => 'Available',
-                'cover' => 'covers/Bumi.jpg',
+                'cover' => 'images/books/Bumi.jpg',
             ],
             [
                 'title' => 'Laskar Pelangi',
@@ -52,7 +52,7 @@ class BookSeeder extends Seeder
                 'publish_year' => 2005,
                 'amount' => 12,
                 'status' => 'Available',
-                'cover' => 'covers/LaskarPelangi.jpg',
+                'cover' => 'images/books/LaskarPelangi.jpg',
             ],
             [
                 'title' => 'Dilan: Dia adalah Dilanku Tahun 1990',
@@ -63,7 +63,7 @@ class BookSeeder extends Seeder
                 'publish_year' => 2014,
                 'amount' => 3,
                 'status' => 'Available',
-                'cover' => 'covers/Dilan1990.jpg',
+                'cover' => 'images/books/Dilan1990.jpg',
             ],
         ];
 
