@@ -8,12 +8,17 @@ Project ini dikembangkan untuk memenuhi **tugas Ujian Akhir Semester (UAS)** den
 
 ---
 
-## 👤 Identitas Mahasiswa
+## 👥 Anggota Kelompok
 
-- **Nama** : _Riski Bagas Pratama_ / _Ulul Azmi_
-- **NIM** : _2402510085_ / _2402510083_
-- **Mata Kuliah** : _Web Based Programming_
-- **Program Studi** : _Sistem Informasi C'24_
+1. **Nama** : _Riski Bagas Pratama_ 
+   **NIM** : _2402510085_
+   **Mata Kuliah** : _Web Based Programming_
+   **Program Studi** : _Sistem Informasi C'24_
+
+2. **Nama** : _Ulul Azmi_
+   **NIM** : _2402510083_
+   **Mata Kuliah** : _Web Based Programming_
+   **Program Studi** : _Sistem Informasi C'24_
 
 ---
 
@@ -96,10 +101,24 @@ Gunakan akun berikut untuk mencoba fitur aplikasi tanpa harus membuat akun baru.
 
 ## ⚙️ Setup Guide
 
+## 🖥️ Menjalankan Server Lokal
+
+Aplikasi ini dijalankan secara lokal menggunakan XAMPP.
+
+Pastikan:
+- Apache aktif
+- MySQL aktif
+
+
 ### Clone project
 ```bash
 git clone https://github.com/riskibagaspratama12/Perpustakaan-UNIBA-Madura.git
 
+```
+
+- Salin file `.env.example` menjadi `.env`.
+```
+copy .env.example .env
 ```
 
 - Setup database pada komputer anda, lalu masukkan kredensial-kredensialnya ke file `.env`.
