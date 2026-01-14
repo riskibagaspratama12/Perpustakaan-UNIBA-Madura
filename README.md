@@ -10,15 +10,15 @@ Project ini dikembangkan untuk memenuhi **tugas Ujian Akhir Semester (UAS)** den
 
 ## 👥 Anggota Kelompok
 
-1. **Nama** : _Riski Bagas Pratama_ 
-   **NIM** : _2402510085_
-   **Mata Kuliah** : _Web Based Programming_
-   **Program Studi** : _Sistem Informasi C'24_
+1. - **Nama** : _Riski Bagas Pratama_ 
+   - **NIM** : _2402510085_
+   - **Mata Kuliah** : _Web Based Programming_
+   - **Program Studi** : _Sistem Informasi C'24_
 
-2. **Nama** : _Ulul Azmi_
-   **NIM** : _2402510083_
-   **Mata Kuliah** : _Web Based Programming_
-   **Program Studi** : _Sistem Informasi C'24_
+2. - **Nama** : _Ulul Azmi_
+   - **NIM** : _2402510083_
+   - **Mata Kuliah** : _Web Based Programming_
+   - **Program Studi** : _Sistem Informasi C'24_
 
 ---
 
