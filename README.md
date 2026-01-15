@@ -128,7 +128,7 @@ Sebelum menjalankan migrate, **database harus dibuat terlebih dahulu**.
 1. Buka `http://localhost/phpmyadmin`
 2. Buat database baru dengan nama:
 ```
-perpustakaan_sekolah
+perpustakaan_kampus
 ```
 
 
@@ -143,7 +143,7 @@ copy .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=perpustakaan_sekolah
+DB_DATABASE=perpustakaan_kampus
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -163,10 +163,6 @@ php artisan storage:link
 ```
 - Migrate database.
 ```bash
-# Tanpa seeder
-php artisan migrate
-
-# Dengan seeder (data dummy)
 php artisan migrate:fresh --seed
 ```
 - Jalankan aplikasi.
