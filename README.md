@@ -116,10 +116,27 @@ git clone https://github.com/riskibagaspratama12/Perpustakaan-UNIBA-Madura.git
 
 ```
 
+- masuk ke folder
+```
+cd Perpustakaan-UNIBA-Madura
+```
+
+### 🗄️ Setup Database (WAJIB)
+
+Sebelum menjalankan migrate, **database harus dibuat terlebih dahulu**.
+
+1. Buka `http://localhost/phpmyadmin`
+2. Buat database baru dengan nama:
+```
+perpustakaan_sekolah
+```
+
+
 - Salin file `.env.example` menjadi `.env`.
 ```
 copy .env.example .env
 ```
+
 
 - Setup database pada komputer anda, lalu masukkan kredensial-kredensialnya ke file `.env`.
 ```

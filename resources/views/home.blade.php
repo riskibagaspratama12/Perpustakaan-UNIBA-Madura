@@ -48,7 +48,7 @@
                         <div
                             class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden transition">
                             <div class="position-relative">
-                                <img src="{{ isset($popularBook->cover) ? asset('storage/' . $popularBook->cover) : asset('storage/placeholder.png') }}"
+                                <img src="{{ asset($popularBook->cover) ? asset('storage/' . $popularBook->cover) : asset('storage/placeholder.png') }}"
                                     alt="{{ $popularBook->title }}"
                                     class="card-img-top max-h-15">
 
