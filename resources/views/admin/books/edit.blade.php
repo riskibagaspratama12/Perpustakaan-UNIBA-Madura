@@ -83,8 +83,12 @@
 
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-center">
-                        <img id="bookCover" src="{{ isset($book->cover) ? asset('storage/' . $book->cover) : asset('storage/placeholder.png') }}"
-                            alt="{{ $book->title }}" class="rounded" style="width: 300px;">
+                        <img id="bookCover"
+                            src="{{ $book->cover_url }}"
+                            alt="{{ $book->title }}"
+                            class="rounded"
+                            style="width: 300px;">
+                        
                     </div>
                 </div>
 

@@ -25,8 +25,11 @@
                         @forelse ($borrows as $borrow)
                             <tr>
                                 <td>
-                                    <img src="{{ isset($borrow->book->cover) ? asset('storage/' . $borrow->book->cover) : asset('storage/placeholder.png') }}"
-                                        alt="{{ $borrow->book->title }}" class="rounded" style="width: 100px;">
+                                    <img src="{{ $borrow->book->cover_url }}"
+                                        alt="{{ $borrow->book->title }}"
+                                        class="rounded"
+                                        style="width: 100px;">
+                                    
                                     <span class="ml-3">{{ $borrow->book->title }}</span>
                                 </td>
                                 <td>{{ $borrow->user->name }}</td>

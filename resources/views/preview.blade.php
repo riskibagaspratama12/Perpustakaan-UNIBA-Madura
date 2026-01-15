@@ -8,8 +8,9 @@
                 <div class="card border-0 shadow-sm rounded-4 p-4">
                     <img class="img-fluid rounded-4 mx-auto"
                         style="max-width: 70%"
-                        src="{{ isset($book->cover) ? asset('storage/' . $book->cover) : asset('storage/placeholder.png') }}"
+                        src="{{ $book->cover_url }}"
                         alt="{{ $book->title }}" />
+                    
                 </div>
             </div>
 

@@ -77,9 +77,10 @@
                             </div>
 
                             <!-- COVER -->
-                            <img src="{{ isset($currentBorrow->book->cover) ? asset('storage/' . $currentBorrow->book->cover) : asset('storage/placeholder.png') }}"
+                            <img src="{{ $currentBorrow->book->cover_url }}"
                                 alt="{{ $currentBorrow->book->title }}"
                                 class="card-img-top">
+                            
 
                             <!-- BODY -->
                             <div class="card-body text-center">
@@ -125,9 +126,10 @@
                         class="col text-dark text-decoration-none">
                         <div
                             class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden">
-                            <img src="{{ isset($recentBorrow->book->cover) ? asset('storage/' . $recentBorrow->book->cover) : asset('storage/placeholder.png') }}"
+                            <img src="{{ $recentBorrow->book->cover_url }}"
                                 alt="{{ $recentBorrow->book->title }}"
                                 class="card-img-top">
+                            
 
                             <div class="card-body text-center">
                                 <h3 class="fs-5 fw-bold mb-3">

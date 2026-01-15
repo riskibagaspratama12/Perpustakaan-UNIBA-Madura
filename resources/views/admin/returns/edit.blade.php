@@ -8,8 +8,11 @@
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-center">
                         <img id="restoreCover"
-                            src="{{ isset($restore->book->cover) ? asset('storage/' . $restore->book->cover) : asset('storage/placeholder.png') }}"
-                            alt="{{ $restore->book->title }}" class="rounded" style="width: 300px;">
+                            src="{{ $restore->book->cover_url }}"
+                            alt="{{ $restore->book->title }}"
+                            class="rounded"
+                            style="width: 300px;">
+
                     </div>
                 </div>
 

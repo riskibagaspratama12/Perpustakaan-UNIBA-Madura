@@ -24,8 +24,11 @@
                         @forelse ($restores as $restore)
                             <tr>
                                 <td>
-                                    <img src="{{ isset($restore->book->cover) ? asset('storage/' . $restore->book->cover) : asset('storage/placeholder.png') }}"
-                                        alt="{{ $restore->book->title }}" class="rounded" style="width: 100px;">
+                                    <img src="{{ $restore->book->cover_url }}"
+                                        alt="{{ $restore->book->title }}"
+                                        class="rounded"
+                                        style="width: 100px;">
+                                    
                                     <span class="ml-3">{{ $restore->book->title }}</span>
                                 </td>
                                 <td>{{ $restore->user->name }}</td>

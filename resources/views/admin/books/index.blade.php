@@ -30,8 +30,11 @@
                         @forelse ($books as $book)
                             <tr>
                                 <td>
-                                    <img src="{{ isset($book->cover) ? asset('storage/' . $book->cover) : asset('storage/placeholder.png') }}"
-                                        alt="{{ $book->title }}" class="rounded" style="width: 100px;">
+                                    <img src="{{ $book->cover_url }}"
+                                        alt="{{ $book->title }}"
+                                        class="rounded"
+                                        style="width: 100px;">
+                                    
                                 </td>
                                 <td>{{ $book->category }}</td>
                                 <td>{{ $book->title }}</td>

@@ -48,9 +48,14 @@
                         <div
                             class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden transition">
                             <div class="position-relative">
-                                <img src="{{ asset($popularBook->cover) ? asset('storage/' . $popularBook->cover) : asset('storage/placeholder.png') }}"
-                                    alt="{{ $popularBook->title }}"
-                                    class="card-img-top max-h-15">
+                                <img src="{{
+                                    str_starts_with($popularBook->cover, 'images/')
+                                        ? asset($popularBook->cover)
+                                        : asset('storage/' . $popularBook->cover)
+                                }}" 
+                                alt="{{ $popularBook->title }}"
+                                class="card-img-top max-h-15">
+                                
 
                                 <span
                                     class="badge bg-success position-absolute top-0 start-0 m-3 rounded-pill shadow-sm">

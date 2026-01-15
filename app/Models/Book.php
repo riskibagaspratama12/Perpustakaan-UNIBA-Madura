@@ -8,18 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-    public function getCoverUrlAttribute()
+public function getCoverUrlAttribute()
 {
     if (!$this->cover) {
-        return asset('images/books/default.jpg');
+        return asset('storage/placeholder.png');
     }
 
-    if (str_starts_with($this->cover, 'images/')) {
-        return asset($this->cover);
-    }
-
-    return asset('storage/' . $this->cover);
+    return str_starts_with($this->cover, 'images/')
+        ? asset($this->cover)
+        : asset('storage/' . $this->cover);
 }
+
 
 
     public const STATUSES = [
