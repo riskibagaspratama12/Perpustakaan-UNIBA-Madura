@@ -30,10 +30,9 @@
                     class="col text-decoration-none text-dark">
                     <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                         <img
-                            src="{{ isset($book->cover) ? asset('storage/' . $book->cover) : asset('storage/placeholder.png') }}"
-                            alt="{{ $book->title }}"
-                            class="card-img-top">
-
+                            <img src="{{ $book->cover_url }}"
+                                alt="{{ $book->title }}"
+                                class="card-img-top">
                         <div class="card-body text-center p-4">
                             <h3 class="fs-5 fw-semibold mb-3">
                                 {{ $book->title }}

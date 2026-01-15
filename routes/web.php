@@ -11,6 +11,11 @@ use App\Http\Controllers\MyBookController;
 use App\Http\Controllers\PreviewController;
 use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserBorrowController;
+
+Route::post('/borrow', [UserBorrowController::class, 'store'])
+    ->middleware('auth');
+
 
 Route::get('/', HomeController::class)->name('home');
 
